@@ -1,0 +1,64 @@
+2024-06-21 22:05:06,558 - INFO - Single pass hash join (Small join Large)
+2024-06-21 22:05:06,580 - INFO - Building hash table on the main node...
+2024-06-21 22:05:06,583 - INFO - Build phase completed in 0.0030 seconds
+2024-06-21 22:05:06,583 - INFO - Performing probe phase with Employees table...
+2024-06-21 22:05:10,842 - INFO - Probe phase completed in 4.2584 seconds
+2024-06-21 22:05:10,854 - INFO - Join produced 33364 rows
+2024-06-21 22:05:10,855 - INFO - Time until the first record was extracted: 0.0719 seconds
+2024-06-21 22:05:10,855 - INFO - Hash table memory: 0.6008 MB
+2024-06-21 22:05:10,855 - INFO - Total execution time: 4.2614 seconds
+2024-06-21 22:05:10,855 - INFO - --------------------------------------------------
+2024-06-21 22:05:11,037 - INFO - Single pass hash join (Large join Small)
+2024-06-21 22:05:11,098 - INFO - Building hash table on the main node...
+2024-06-21 22:05:11,111 - INFO - Build phase completed in 0.0136 seconds
+2024-06-21 22:05:11,111 - INFO - Performing probe phase with Projects table...
+2024-06-21 22:05:15,480 - INFO - Probe phase completed in 4.3684 seconds
+2024-06-21 22:05:15,542 - INFO - Join produced 33364 rows
+2024-06-21 22:05:15,543 - INFO - Time until the first record was extracted: 0.0413 seconds
+2024-06-21 22:05:15,543 - INFO - Hash table memory: 2.4498 MB
+2024-06-21 22:05:15,543 - INFO - Total execution time: 4.3821 seconds
+2024-06-21 22:05:15,543 - INFO - --------------------------------------------------
+2024-06-21 22:05:15,733 - INFO - Pipelined hash join (Small join Large)
+2024-06-21 22:05:15,734 - INFO - Performing probe phase with Projects and Employees tables...
+2024-06-21 22:05:20,409 - INFO - Probe phase completed in 4.6753 seconds
+2024-06-21 22:05:20,497 - INFO - Join produced 33364 rows
+2024-06-21 22:05:20,497 - INFO - Time until the first record was extracted: 0.0030 seconds
+2024-06-21 22:05:20,497 - INFO - Hash table 1 memory: 0.6008 MB
+2024-06-21 22:05:20,497 - INFO - Hash table 2 memory: 2.4498 MB
+2024-06-21 22:05:20,497 - INFO - Total hash table memory: 3.0506 MB
+2024-06-21 22:05:20,497 - INFO - Total execution time: 4.6753 seconds
+2024-06-21 22:05:20,497 - INFO - --------------------------------------------------
+2024-06-21 22:05:20,700 - INFO - Pipelined hash join (Large join Small)
+2024-06-21 22:05:20,701 - INFO - Performing probe phase with Employees and Projects tables...
+2024-06-21 22:05:25,297 - INFO - Probe phase completed in 4.5960 seconds
+2024-06-21 22:05:25,373 - INFO - Join produced 33364 rows
+2024-06-21 22:05:25,373 - INFO - Time until the first record was extracted: 0.0035 seconds
+2024-06-21 22:05:25,373 - INFO - Hash table 1 memory: 2.4498 MB
+2024-06-21 22:05:25,373 - INFO - Hash table 2 memory: 0.6008 MB
+2024-06-21 22:05:25,373 - INFO - Total hash table memory: 3.0506 MB
+2024-06-21 22:05:25,373 - INFO - Total execution time: 4.5960 seconds
+2024-06-21 22:05:25,373 - INFO - --------------------------------------------------
+2024-06-21 22:05:25,562 - INFO - Semi-join (Small join Large)
+2024-06-21 22:05:25,591 - INFO - Performing semi-join between Employees and Projects tables...
+2024-06-21 22:05:49,709 - INFO - Join phase completed in 24.1170 seconds
+2024-06-21 22:05:49,709 - INFO - Total execution time: 24.1170 seconds
+2024-06-21 22:05:49,709 - INFO - Time until the first record was written to the CSV: 0.0570 seconds
+2024-06-21 22:05:49,711 - INFO - Join produced 33364 rows
+2024-06-21 22:05:49,711 - INFO - Time until the first record was extracted: 0.0570 seconds
+2024-06-21 22:05:49,712 - INFO - Join values memory: 0.0033 MB
+2024-06-21 22:05:49,712 - INFO - Probed rows memory: 0.1423 MB
+2024-06-21 22:05:49,712 - INFO - Total memory required: 0.1456 MB
+2024-06-21 22:05:49,712 - INFO - Total execution time: 24.1170 seconds
+2024-06-21 22:05:49,712 - INFO - --------------------------------------------------
+2024-06-21 22:05:49,874 - INFO - Semi-join (Large join Small)
+2024-06-21 22:05:49,909 - INFO - Performing semi-join between Projects and Employees tables...
+2024-06-21 22:06:09,353 - INFO - Join phase completed in 19.4438 seconds
+2024-06-21 22:06:09,353 - INFO - Total execution time: 19.4438 seconds
+2024-06-21 22:06:09,353 - INFO - Time until the first record was written to the CSV: 0.0214 seconds
+2024-06-21 22:06:09,360 - INFO - Join produced 33364 rows
+2024-06-21 22:06:09,361 - INFO - Time until the first record was extracted: 0.0214 seconds
+2024-06-21 22:06:09,361 - INFO - Join values memory: 0.0030 MB
+2024-06-21 22:06:09,361 - INFO - Probed rows memory: 0.4929 MB
+2024-06-21 22:06:09,361 - INFO - Total memory required: 0.4959 MB
+2024-06-21 22:06:09,361 - INFO - Total execution time: 19.4438 seconds
+2024-06-21 22:06:09,361 - INFO - --------------------------------------------------
